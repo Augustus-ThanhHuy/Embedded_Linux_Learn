@@ -38,7 +38,12 @@ int main()
 		 printf("from child: hello world\n");
 		 sleep(1); /* Tạm dừng để thấy rõ sự hoạt động của tiến trình */
 		 exit(0);
-	 default:
+	 default:   /* Xử lý tiến trình cha*/
+        /* Tiến trình cha tiếp tục xử lý công việc không cần đợi tiến trình con*/
+        For(int i = 0; < 10; i++){
+            printf("%d\n", i);
+            sleep(1); /* Tạm dừng 1 giây */
+        }
 		 break;
 	}
 	return 0;

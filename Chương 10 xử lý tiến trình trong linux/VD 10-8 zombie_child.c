@@ -22,7 +22,6 @@ int main(){
     default:
         printf("parent exited \n");
     }
-
-
+    
     return 0;
 }

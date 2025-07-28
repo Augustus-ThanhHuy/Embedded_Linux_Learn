@@ -37,7 +37,7 @@ int main(){
             printf("Pickup a thread \n");
         }
     }
-    printf("All thread completed \n");
+    printf("All thread comple ted \n");
 
     return 0;
 }

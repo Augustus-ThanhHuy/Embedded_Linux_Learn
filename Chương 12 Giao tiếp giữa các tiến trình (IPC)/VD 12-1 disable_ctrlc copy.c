@@ -16,6 +16,13 @@ int main(int argc, char* argv[])
     //Thiết lập hàm xử lý cho tín hiệu INT (Ctrl-C)
     signal(SIGINT, catch_int);
 
+    /*
+    signal(SIGINT, SIG_IGN); // Bỏ qua Ctrl+C
+    */
+
+    /*
+    signal(SIGINT, SIG_DFL); // Bỏ qua Ctrl+C
+    */
     while(1){
         printf("Process is calculating ...%d\n", count++);
         sleep(1);

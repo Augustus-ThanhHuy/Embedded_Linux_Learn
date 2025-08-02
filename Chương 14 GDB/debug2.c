@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 typedef struct {
     char *data;
     int key;
@@ -33,6 +35,10 @@ void sort(item *a, int n)
 
 int main(){
     sort(array, 5);
-
+    for (int i = 0; i < 5; i++)
+    {
+        printf("array[%d] = {%d, %s}\n", i, array[i].key, array[i].data);
+    }
+    
     return 0;
 }
